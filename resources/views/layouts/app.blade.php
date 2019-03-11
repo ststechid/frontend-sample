@@ -41,7 +41,8 @@
             }
 
             .content {
-                text-align: center;
+                text-align: left;
+                padding: 20px 40px;
             }
 
             .title {
@@ -62,28 +63,15 @@
                 margin-bottom: 30px;
             }
         </style>
+        @yield("head")
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="full-height">
 
             <div class="content">
-                <div class="title m-b-md">
-                    <img src="/images/sts-logo.png" />
-                    <br />
-                    STS Frontend Sample
-                </div>
-
-                <p>
-                    This is sample project for Frontend, to demonstrate using most popular Javascript (jQuery, AngularJS, ReactJS)
-                </p>
-                <div class="links">
-                    <a href="/jquery">jQuery</a>
-                    <a href="/angularjs">AngularJS (Legacy Version 1)</a>
-                    <a href="/angular6">Angular 6</a>
-                    <a href="/reactjs">ReactJS</a>
-                    <a href="/others">Others</a>
-                </div>
+                @yield("content")
             </div>
         </div>
+        @yield("endbody")
     </body>
 </html>

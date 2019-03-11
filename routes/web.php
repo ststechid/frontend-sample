@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// Backend API
+
+
+require_once __DIR__  . '/web-jquery.php';
+require_once __DIR__  . '/web-others.php';
